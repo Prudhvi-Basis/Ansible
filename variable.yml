@@ -22,7 +22,7 @@
   tasks:
     - name: check package
       ansible.builtin.dnf:
-        name: zlib
+        name: python
         state: installed
       register: out
 
