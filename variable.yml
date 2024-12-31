@@ -7,3 +7,9 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: URL -  {{ URL }} # Accessing a variable in ansible.
+
+- name: Demo on role variables
+  hosts: localhost
+  connection: local
+  roles:
+    - sample
