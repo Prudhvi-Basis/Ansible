@@ -11,7 +11,7 @@
   connection: local
   become: yes
   tasks:
-    - name: check package:
+    - name: check package
       ansible.builtin.dnf:
         name: zlib
         state: installed
