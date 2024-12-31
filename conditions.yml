@@ -2,9 +2,9 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: print OS Redhat
+    - name: print OS PRABHAS
       ansible.builtin.debug:
-        msg: Redhat
+        msg: PRABHAS
 
     - name: print OS Ubuntu
       ansible.builtin.debug:
