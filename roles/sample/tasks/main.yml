@@ -1,6 +1,6 @@
 - name: Demo on register variables
   hosts: localhost
-  #connection: local
+  connection: local
   become: yes
   tasks:
     - name: check package
