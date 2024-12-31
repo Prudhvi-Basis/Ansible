@@ -10,4 +10,5 @@
     - name: print OS Ubuntu
       ansible.builtin.debug:
         msg: Ubuntu
-      when: os == "Ubuntu"
+      when: os == "Ubuntu" # In place of conditions you can use conditions booleans
+        ansible.builtin.debug:
