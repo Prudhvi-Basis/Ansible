@@ -2,10 +2,12 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: print OS PRABHAS
+    - name: print OS Redhat
       ansible.builtin.debug:
-        msg: PRABHAS
+        msg: Redhat
+      when: os == "Redhat"
 
     - name: print OS Ubuntu
       ansible.builtin.debug:
         msg: Ubuntu
+      when: os == "Ubuntu"
