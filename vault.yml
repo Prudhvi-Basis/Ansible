@@ -4,4 +4,4 @@
   tasks:
     - name: Print Password
       ansible.builtin.debug:
-        msg: "{{ lookup('hashi_vault', 'test/data/my_credentials:password token={{ vault_token }} url=https://54.91.146.192 validate_certs=False')}}"
+        msg: "{{ lookup('hashi_vault', 'test/data/my_credentials:username token={{ vault_token }} url=https://54.91.146.192 validate_certs=False')}}"
